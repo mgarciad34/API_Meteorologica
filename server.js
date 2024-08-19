@@ -1,11 +1,13 @@
-const express = require('express')
-const app = express()
-const port = process.env.PORT || 3000
+const express = require('express');
+require('dotenv').config();
 
-app.get('/', (req, res) => {
-    res.send('Bienvenido a la API Meteorologica')
-})
+const weatherRoutes = require('./routers/tiempoRouter');
 
-app.listen(port, () => {
-    console.log('Servidor corriendo en el puerto ' + port)
-})
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use('/', weatherRoutes);
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
