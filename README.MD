@@ -11,4 +11,6 @@ Para el desarrollo de esta API la hemos realizado en express con axios y conecta
 
 3. Lanzar el servicio con el comando node server.js
 
-4. acceder a la siguiente ruta http://localhost:3000/weather?city=nombre+de+tu+ciudad
+4. acceder a la siguiente ruta 
+
+http://localhost:3000/weather?city=nombre+de+tu+ciudad
