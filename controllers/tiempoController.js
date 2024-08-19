@@ -14,7 +14,7 @@ const obtenerTiempo = async (ciudad) => {
         const datosTiempo = response.data;
         return {
             city: datosTiempo.name,
-            temperature: datosTiempo.main.temp,
+            temperature: datosTiempo.main.temp  ,
             description: datosTiempo.weather[0].description,
         }
     }catch (error){
